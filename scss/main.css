@@ -36,6 +36,8 @@ body {
 .logo-img {
   height: 100%;
   width: 10rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .heading {
@@ -48,6 +50,79 @@ body {
   font-size: 6rem;
   font-weight: lighter;
   letter-spacing: 0.5rem;
+}
+
+.dropdown-li {
+  position: relative;
+}
+.dropdown-li::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: bold;
+}
+.dropdown-li:hover .dropdown {
+  /* 1) Unhide it visually */
+  opacity: 1;
+  /* 2) Make it accessible to mouse and keyboard */
+  pointer-events: auto;
+  /* 3)  Hide it from screen readers */
+  visibility: visible;
+}
+
+.dropdown {
+  position: absolute;
+  top: 2.5rem;
+  right: -2.8rem;
+  width: 10rem;
+  background-color: #e6e2e4;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  transition: all 0.3s;
+  /* NOTE: Hide the elements - display: none is not animatable so we dont use it here */
+  /* 1) Hide it visually */
+  opacity: 0;
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+  /* 3)  Hide it from screen readers */
+  visibility: hidden;
+}
+.dropdown-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.dropdown-item {
+  list-style: none;
+}
+.dropdown-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.dropdown-link:hover {
+  color: #999999;
+}
+.dropdown::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1.2rem;
+  left: 5.8rem;
+  width: 1.8rem;
+  height: 1.2rem;
+  -webkit-clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+          clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+  background-color: inherit;
+}
+.dropdown-item:not(:last-of-type) {
+  margin: 0 0 0.5rem 0;
+}
+.dropdown-link {
+  font-weight: 300;
+  font-size: 1.6rem;
 }
 
 .header {
@@ -105,8 +180,4 @@ body {
 }
 .second-nav-link:hover {
   color: #999999;
-}
-
-.dropdown {
-  display: none;
 }/*# sourceMappingURL=main.css.map */
