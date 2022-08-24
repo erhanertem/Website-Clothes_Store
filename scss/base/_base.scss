@@ -1,8 +1,8 @@
 //global definitions are registered here
 /* universal reset which includes after and before pseudo elements as well - we increased the spectrum of coverage */
 *,
-*::after,
-*::before {
+*:not(.fa)::after,
+*:not(.fa)::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
