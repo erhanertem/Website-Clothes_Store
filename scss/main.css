@@ -105,6 +105,9 @@ body {
 .dropdown-link:hover {
   color: #999999;
 }
+.dropdown-link .fa {
+  margin-right: 0.5rem;
+}
 .dropdown::after {
   content: "";
   display: block;
@@ -158,6 +161,9 @@ body {
 .first-nav-link:hover {
   color: #999999;
 }
+.first-nav-link .fa {
+  margin-right: 0.5rem;
+}
 
 .second-nav {
   grid-column: 3/8;
@@ -180,4 +186,7 @@ body {
 }
 .second-nav-link:hover {
   color: #999999;
+}
+.second-nav-link .fa {
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

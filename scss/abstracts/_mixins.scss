@@ -20,5 +20,9 @@
 		&:hover {
 			color: lighten(color(primary), 40%);
 		}
+
+		.fa {
+			margin-right: 0.5rem;
+		}
 	}
 }
