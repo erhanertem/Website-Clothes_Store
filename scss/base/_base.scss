@@ -22,6 +22,7 @@ body {
 
 .grid-container {
 	display: grid;
+	//create a table of 9columns by 4rows with gaps between rows
 	grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem));
 	grid-template-rows: repeat(4, min-content);
 	row-gap: 1.6rem;
