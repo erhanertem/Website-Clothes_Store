@@ -1,0 +1,4 @@
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+	//NOTE: map-get function requires the name of the map ($colors) and a parameter name to select the field ($color-name)
+}

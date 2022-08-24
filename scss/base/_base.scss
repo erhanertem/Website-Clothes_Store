@@ -20,5 +20,10 @@ body {
 	box-sizing: border-box;
 }
 
-.first-nav-item {
+.grid-container {
+	display: grid;
+	grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem));
+	grid-template-rows: repeat(4, min-content);
+	row-gap: 1.6rem;
+	background-color: color(tertiary);
 }
