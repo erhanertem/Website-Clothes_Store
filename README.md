@@ -6,7 +6,7 @@
 
 ### **Objective:** Clothes Store Web Page - Create a fictional responsive web page covering the principles of Advanced SASS
 
-- xxx
+- CSS Grid Layout
 - xxx
 - xxx
 
