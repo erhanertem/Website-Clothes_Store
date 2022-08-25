@@ -173,6 +173,72 @@ body {
   font-size: 1.6rem;
 }
 
+.btn {
+  width: 16rem;
+  height: 4rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+.btn:hover .btn-bg {
+  width: 18rem;
+}
+.btn:hover .btn-text {
+  color: #ffe;
+}
+.btn:hover .arrow {
+  transform: translateX(1rem);
+}
+.btn:hover .arrow-line-1 {
+  width: 2rem;
+}
+.btn-bg {
+  width: 4rem;
+  height: 4rem;
+  background-color: #333;
+  border-radius: 50rem;
+  position: absolute;
+  left: 0;
+  transition: width 0.2s;
+}
+.btn-text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #333;
+  z-index: 10;
+}
+.btn .arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  transition: transform 0.2s;
+}
+.btn .arrow-line {
+  height: 0.2rem;
+  background-color: #ffe;
+  position: absolute;
+  transform-origin: right;
+}
+.btn .arrow-line-1 {
+  width: 0rem;
+  transform: translateX(-0.7rem);
+  transition: width 0.2s;
+}
+.btn .arrow-line-2 {
+  width: 1rem;
+  transform: rotateZ(45deg);
+}
+.btn .arrow-line-3 {
+  width: 1rem;
+  transform: rotateZ(-45deg);
+}
+
 .header {
   grid-column: 1/-1;
   grid-row: 1/2;
@@ -319,6 +385,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+}
+.products-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 .product {

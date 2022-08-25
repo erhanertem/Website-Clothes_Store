@@ -16,6 +16,13 @@
 	&-wrapper {
 		@include flexPosition($gap: 2.5rem);
 	}
+
+	&-btn {
+		// width: 16rem;
+		// height: 4rem;
+		// margin: 0 auto; // works only when width is smaller than the vw
+		@include flexPosition;
+	}
 }
 
 .product {
