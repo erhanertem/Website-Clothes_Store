@@ -2,7 +2,7 @@
 	grid-column: 1 / -1;
 	grid-row: 4 / 5;
 
-	@include flexPosition($justifyContent: space-around);
+	@include flexPosition($justifyContent: space-around, $alignItems: start);
 
 	padding: 5rem 0;
 	border-top: 0.1rem solid color(primary);
