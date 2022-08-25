@@ -457,4 +457,47 @@ body {
 .footer {
   grid-column: 1/-1;
   grid-row: 4/5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  padding: 5rem 0;
+  border-top: 0.1rem solid #333;
+}
+
+.footer-nav-heading {
+  font-size: 2.5rem;
+  color: #333;
+}
+.footer-nav-item {
+  list-style: none;
+  margin: 1rem 0;
+}
+.footer-nav-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #595959;
+  transition: color 0.3s;
+}
+.footer-nav-link:hover {
+  color: #8c8c8c;
+}
+
+.contact-list-heading {
+  font-size: 2.5rem;
+  color: #333;
+}
+.contact-list-item {
+  list-style: none;
+  margin: 1rem 0;
+}
+.contact-list-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #595959;
+  transition: color 0.3s;
+}
+.contact-list-link:hover {
+  color: #8c8c8c;
 }/*# sourceMappingURL=main.css.map */
