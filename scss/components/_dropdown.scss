@@ -2,10 +2,19 @@
 .dropdown-li {
 	position: relative;
 
-	&::after {
-		font-family: "Font Awesome 5 Free";
-		content: "\f078";
-		font-weight: bold;
+	// &::after {
+	// 	font-family: "Font Awesome 5 Free";
+	// 	content: "\f107";
+	// 	font-weight: bold;
+	// }
+
+	.fa-angle-down {
+		font-size: size(md);
+		color: color(primary);
+	}
+
+	&:hover .fa-angle-down {
+		color: lighten(color(primary), 40%);
 	}
 
 	&:hover .dropdown {

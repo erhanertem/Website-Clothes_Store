@@ -100,10 +100,12 @@ body {
 .dropdown-li {
   position: relative;
 }
-.dropdown-li::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f078";
-  font-weight: bold;
+.dropdown-li .fa-angle-down {
+  font-size: 2rem;
+  color: #333;
+}
+.dropdown-li:hover .fa-angle-down {
+  color: #999999;
 }
 .dropdown-li:hover .dropdown {
   /* 1) Unhide it visually */
@@ -450,4 +452,9 @@ body {
   padding: 0.5rem 1rem;
   border: 0.1rem solid #f5b149;
   background-color: #666666;
+}
+
+.footer {
+  grid-column: 1/-1;
+  grid-row: 4/5;
 }/*# sourceMappingURL=main.css.map */
