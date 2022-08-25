@@ -1,0 +1,22 @@
+@keyframes slideshow {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	2% {
+		visibility: visible;
+		opacity: 1;
+	}
+	18% {
+		visibility: visible;
+		opacity: 1;
+	}
+	20% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+} ;
