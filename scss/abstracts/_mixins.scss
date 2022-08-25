@@ -27,8 +27,15 @@
 	}
 }
 
-@mixin flexPosition($justifyContent: center, $alignItems: center) {
+@mixin flexPosition(
+	$flexDirection: row,
+	$justifyContent: center,
+	$alignItems: center,
+	$gap: 0
+) {
 	display: flex;
+	flex-direction: $flexDirection;
 	justify-content: $justifyContent;
 	align-items: $alignItems;
+	gap: $gap;
 }
