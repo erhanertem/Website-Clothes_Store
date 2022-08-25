@@ -74,17 +74,6 @@ body {
     opacity: 0;
   }
 }
-.logo {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.logo-img {
-  height: 100%;
-  width: 10rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
-}
-
 .heading {
   grid-column: 4/7;
   grid-row: 2/3;
@@ -95,6 +84,17 @@ body {
   font-size: 6rem;
   font-weight: lighter;
   letter-spacing: 0.5rem;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.logo-img {
+  height: 100%;
+  width: 10rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .dropdown-li {
@@ -182,6 +182,7 @@ body {
   grid-template-rows: repeat(3, -webkit-min-content);
   grid-template-rows: repeat(3, min-content);
   gap: 2rem;
+  z-index: 100;
 }
 
 .first-nav {

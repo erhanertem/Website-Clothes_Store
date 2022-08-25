@@ -45,7 +45,7 @@
 		$animList: 1 0s, 2 4s, 3 8s, 4 12s, 5 16s;
 
 		@each $item in $animList {
-			&:nth-child(nth($item,1)) {
+			&:nth-child(#{nth($item,1)}) {
 				animation-delay: nth($item, 2);
 			}
 		}

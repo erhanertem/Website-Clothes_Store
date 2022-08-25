@@ -3,9 +3,12 @@
 	grid-column: 1 / -1; // span across all the columns
 	grid-row: 1 / 2; // take 2 of 4 rows
 
-	display: grid;
 	//create a grid of 9 columns by 3 rows
+	display: grid;
 	grid-template-columns: 1fr repeat(7, minmax(min-content, 16rem)) 1fr;
 	grid-template-rows: repeat(3, min-content);
 	gap: 2rem;
+
+	// brings this section above the slideshow section to have drop down menu not obscured
+	z-index: 100;
 }
