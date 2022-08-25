@@ -12,12 +12,39 @@
 		top: 0;
 		left: 0;
 
+		//conforms the width and height of its grid-based container
 		width: inherit;
 		height: inherit;
 
 		animation: slideshow 20s linear infinite;
+		/* 
+    Infinite cycle, linear speed, for 20s. However, all the slides are animated together. 
+    In order to avoid simultaneous animation of slides, each slide needs to posses a distinct delay. 4s per slide x 5 = 20s total animation length 
+    */
+
+		&:nth-child(1) {
+			animation-delay: 0s; // 0s thru 4s, #1 slide lives
+		}
+
+		&:nth-child(2) {
+			animation-delay: 4s; // 4s thru 8s, #2 slide lives
+		}
+
+		&:nth-child(3) {
+			animation-delay: 8s; // 8s thru 12s, #3 slide lives
+		}
+
+		&:nth-child(4) {
+			animation-delay: 12s; // 12s thru 16s, #4 slide lives
+		}
+
+		&:nth-child(5) {
+			animation-delay: 16s; // 16s thru 20s, #5 slide lives
+		}
 
 		img {
+			//conforms the width and height of its parent container which conforms to its grid-based container - cascaded inheritance
+			// without this, img would only be limited to its original width and height boundaries
 			width: inherit;
 			height: inherit;
 			object-fit: cover;
