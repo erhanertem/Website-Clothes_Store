@@ -6,9 +6,13 @@
 
 ### **Objective:** Clothes Store Web Page - Create a fictional responsive web page covering the principles of Advanced SASS
 
-- CSS Grid Layout
-- xxx
-- xxx
+&emsp;
+
+### Main Takeaways:
+
+- Responsive CSS Grid Layout
+- SASS map entry for variable declarations / Utilize SASS map-get() function
+- SASS list entry for a infintely looping slide&timings series / Use @each loop directive, nth() function along with #{...} SASS template literal to select sub-multi entry list elements
 
 &emsp;
 
