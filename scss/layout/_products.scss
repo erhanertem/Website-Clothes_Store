@@ -1,0 +1,15 @@
+.products {
+	grid-column: 1 / -1;
+	grid-row: 3 / 4;
+
+	&-heading {
+		margin: 5rem 0;
+
+		&-text {
+			text-align: center;
+			font-size: size(lg) + 2rem;
+			font-weight: 300;
+			color: color(primary);
+		}
+	}
+}

@@ -298,4 +298,18 @@ body {
 .slideshow-content p {
   margin: 1rem 0;
   font-size: 1.8rem;
+}
+
+.products {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+.products-heading {
+  margin: 5rem 0;
+}
+.products-heading-text {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #333;
 }/*# sourceMappingURL=main.css.map */
