@@ -16,7 +16,7 @@
 		width: inherit;
 		height: inherit;
 
-		animation: slideshow 20s linear infinite;
+		animation: slideshow 25s linear infinite;
 		/* 
     Infinite cycle, linear speed, for 20s. However, all the slides are animated together. 
     In order to avoid simultaneous animation of slides, each slide needs to posses a distinct delay. 4s per slide x 5 = 20s total animation length 
@@ -42,7 +42,7 @@
 		// }
 
 		// lets summarize the above animation and put the data for each slide in a SASS list form.
-		$animList: 1 0s, 2 4s, 3 8s, 4 12s, 5 16s;
+		$animList: 1 0s, 2 5s, 3 10s, 4 15s, 5 20s;
 
 		@each $item in $animList {
 			&:nth-child(#{nth($item,1)}) {

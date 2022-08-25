@@ -250,8 +250,8 @@ body {
   left: 0;
   width: inherit;
   height: inherit;
-  -webkit-animation: slideshow 20s linear infinite;
-          animation: slideshow 20s linear infinite;
+  -webkit-animation: slideshow 25s linear infinite;
+          animation: slideshow 25s linear infinite;
   /* 
     Infinite cycle, linear speed, for 20s. However, all the slides are animated together. 
     In order to avoid simultaneous animation of slides, each slide needs to posses a distinct delay. 4s per slide x 5 = 20s total animation length 
@@ -262,20 +262,20 @@ body {
           animation-delay: 0s;
 }
 .slideshow-slide:nth-child(2) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .slideshow-slide:nth-child(3) {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 .slideshow-slide:nth-child(4) {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 .slideshow-slide:nth-child(5) {
-  -webkit-animation-delay: 16s;
-          animation-delay: 16s;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
 }
 .slideshow-slide img {
   width: inherit;
