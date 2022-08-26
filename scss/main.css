@@ -75,7 +75,7 @@ body {
   }
 }
 .heading {
-  grid-column: 4/7;
+  grid-column: 1/-1;
   grid-row: 2/3;
   text-align: center;
 }
@@ -309,6 +309,11 @@ body {
 .second-nav-link .fa {
   margin-right: 0.5rem;
 }
+@media only screen and (max-width: 62.5em) {
+  .second-nav {
+    grid-column: 2/9;
+  }
+}
 
 .slideshow {
   grid-column: 1/-1;
@@ -320,6 +325,11 @@ body {
 @media only screen and (max-width: 75em) {
   .slideshow {
     height: 70vh;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .slideshow {
+    height: 60vh;
   }
 }
 .slideshow-slide {
@@ -368,6 +378,16 @@ body {
   left: 6rem;
   max-width: 40rem;
   padding: 5rem;
+}
+@media only screen and (max-width: 75em) {
+  .slideshow-content {
+    padding: 3.5rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .slideshow-content {
+    padding: 2rem;
+  }
 }
 .slideshow-content h2 {
   font-size: 4.2rem;
@@ -443,13 +463,28 @@ body {
   visibility: hidden;
   transition: all 0.6s 0.3s;
 }
+@media only screen and (max-width: 62.5em) {
+  .product-description {
+    padding: 1rem;
+  }
+}
 .product-description-heading {
   font-size: 3rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .product-description-heading {
+    font-size: 2rem;
+  }
 }
 .product-description-price {
   font-size: 2.5rem;
   font-weight: 300;
   margin: 1rem 0;
+}
+@media only screen and (max-width: 62.5em) {
+  .product-description-price {
+    font-size: 1.8rem;
+  }
 }
 .product-description-price span {
   font-weight: 600;
@@ -463,6 +498,12 @@ body {
   border: 0.1rem solid #f5b149;
   background-color: #666666;
 }
+@media only screen and (max-width: 62.5em) {
+  .product-description-btn {
+    font-size: 1.28rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
 
 .footer {
   grid-column: 1/-1;
@@ -474,6 +515,12 @@ body {
   gap: 0;
   padding: 5rem 0;
   border-top: 0.1rem solid #333;
+}
+@media only screen and (max-width: 62.5em) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
 }
 .footer .footer-nav-heading {
   font-size: 2.5rem;
@@ -508,6 +555,12 @@ body {
 }
 .footer .contact-list-link:hover {
   color: #8c8c8c;
+}
+@media only screen and (max-width: 62.5em) {
+  .footer .contact {
+    padding: 0 10rem;
+    order: 1;
+  }
 }
 .footer .contact-heading {
   font-size: 3rem;

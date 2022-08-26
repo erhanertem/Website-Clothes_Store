@@ -8,6 +8,9 @@
 	@include break(xl) {
 		height: 70vh;
 	}
+	@include break(lg) {
+		height: 60vh;
+	}
 
 	position: relative;
 
@@ -72,6 +75,13 @@
 
 		max-width: 40rem;
 		padding: 5rem;
+
+		@include break(xl) {
+			padding: 3.5rem;
+		}
+		@include break(lg) {
+			padding: 2rem;
+		}
 
 		h2 {
 			font-size: size(xl) + 1.2rem;

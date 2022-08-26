@@ -69,13 +69,25 @@
 		visibility: hidden;
 		transition: all 0.6s 0.3s;
 
+		@include break(lg) {
+			padding: 1rem;
+		}
+
 		&-heading {
 			font-size: size(xl);
+
+			@include break(lg) {
+				font-size: size(md);
+			}
 		}
 		&-price {
 			font-size: size(lg);
 			font-weight: 300;
 			margin: 1rem 0;
+
+			@include break(lg) {
+				font-size: size(sm);
+			}
 
 			span {
 				font-weight: 600;
@@ -92,6 +104,11 @@
 
 			border: 0.1rem solid color(quaternary);
 			background-color: lighten(color(primary), 20%);
+
+			@include break(lg) {
+				font-size: size(xs) * 0.8;
+				padding: 0.2rem 0.5rem;
+			}
 		}
 	}
 }

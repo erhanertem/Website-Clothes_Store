@@ -13,4 +13,8 @@
 	grid-column: 3/8;
 	grid-row: 3/4;
 	@include navigation;
+
+	@include break(lg) {
+		grid-column: 2/9;
+	}
 }

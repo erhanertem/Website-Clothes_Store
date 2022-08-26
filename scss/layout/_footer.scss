@@ -7,6 +7,11 @@
 	padding: 5rem 0;
 	border-top: 0.1rem solid color(primary);
 
+	@include break(lg) {
+		flex-wrap: wrap;
+		gap: 4rem;
+	}
+
 	.footer-nav {
 		@include footerList;
 	}
@@ -16,6 +21,11 @@
 	}
 
 	.contact {
+		@include break(lg) {
+			padding: 0 10rem;
+			order: 1;
+		}
+
 		&-heading {
 			font-size: size(xl);
 			color: color(primary);
