@@ -7,6 +7,12 @@
 	@include break(xl) {
 		grid-column: 6/10;
 	}
+	@include break(lg) {
+		grid-column: 5/10;
+	}
+	@include break(md) {
+		grid-column: 4/10;
+	}
 }
 
 .second-nav {
@@ -16,5 +22,8 @@
 
 	@include break(lg) {
 		grid-column: 2/9;
+	}
+	@include break(md) {
+		grid-column: 1/10;
 	}
 }

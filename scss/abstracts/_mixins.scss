@@ -77,4 +77,10 @@
 			@content;
 		}
 	}
+	//752px/16px == 47em
+	@if ($breakpoint == md) {
+		@media only screen and (max-width: 47em) {
+			@content;
+		}
+	}
 }

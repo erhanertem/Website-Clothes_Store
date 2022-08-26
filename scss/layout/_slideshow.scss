@@ -11,6 +11,9 @@
 	@include break(lg) {
 		height: 60vh;
 	}
+	@include break(md) {
+		height: 50vh;
+	}
 
 	position: relative;
 
@@ -82,15 +85,27 @@
 		@include break(lg) {
 			padding: 2rem;
 		}
+		@include break(md) {
+			padding: 1rem;
+			max-width: 20rem;
+		}
 
 		h2 {
 			font-size: size(xl) + 1.2rem;
 			color: color(primary);
+
+			@include break(md) {
+				font-size: size(sm);
+			}
 		}
 
 		p {
 			margin: 1rem 0;
 			font-size: size(sm);
+
+			@include break(md) {
+				font-size: size(sm) * 0.8;
+			}
 		}
 	}
 }

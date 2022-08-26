@@ -14,6 +14,11 @@ html {
   change default font-size=10px => 10/16*100=62.5% is now 1rem */
   font-size: 62.5%;
 }
+@media only screen and (max-width: 47em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -283,6 +288,16 @@ body {
     grid-column: 6/10;
   }
 }
+@media only screen and (max-width: 62.5em) {
+  .first-nav {
+    grid-column: 5/10;
+  }
+}
+@media only screen and (max-width: 47em) {
+  .first-nav {
+    grid-column: 4/10;
+  }
+}
 
 .second-nav {
   grid-column: 3/8;
@@ -314,6 +329,11 @@ body {
     grid-column: 2/9;
   }
 }
+@media only screen and (max-width: 47em) {
+  .second-nav {
+    grid-column: 1/10;
+  }
+}
 
 .slideshow {
   grid-column: 1/-1;
@@ -330,6 +350,11 @@ body {
 @media only screen and (max-width: 62.5em) {
   .slideshow {
     height: 60vh;
+  }
+}
+@media only screen and (max-width: 47em) {
+  .slideshow {
+    height: 50vh;
   }
 }
 .slideshow-slide {
@@ -389,13 +414,29 @@ body {
     padding: 2rem;
   }
 }
+@media only screen and (max-width: 47em) {
+  .slideshow-content {
+    padding: 1rem;
+    max-width: 20rem;
+  }
+}
 .slideshow-content h2 {
   font-size: 4.2rem;
   color: #333;
 }
+@media only screen and (max-width: 47em) {
+  .slideshow-content h2 {
+    font-size: 1.8rem;
+  }
+}
 .slideshow-content p {
   margin: 1rem 0;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 47em) {
+  .slideshow-content p {
+    font-size: 1.44rem;
+  }
 }
 
 .products {
@@ -567,13 +608,24 @@ body {
   color: #333;
   text-align: center;
 }
+@media only screen and (max-width: 47em) {
+  .footer .contact-heading {
+    font-size: 2.5rem;
+  }
+}
 .footer .contact-paragraph {
   font-size: 2.5rem;
   margin: 1rem 0;
   text-align: center;
 }
+@media only screen and (max-width: 47em) {
+  .footer .contact-paragraph {
+    font-size: 2rem;
+  }
+}
 .footer .inputs-group {
   display: flex;
+  justify-content: center;
 }
 .footer .inputs-group input {
   padding: 1rem;

@@ -30,17 +30,26 @@
 			font-size: size(xl);
 			color: color(primary);
 			text-align: center;
+
+			@include break(md) {
+				font-size: size(lg);
+			}
 		}
 
 		&-paragraph {
 			font-size: size(lg);
 			margin: 1rem 0;
 			text-align: center;
+
+			@include break(md) {
+				font-size: size(md);
+			}
 		}
 	}
 
 	.inputs-group {
 		display: flex;
+		justify-content: center;
 
 		input {
 			padding: 1rem;
