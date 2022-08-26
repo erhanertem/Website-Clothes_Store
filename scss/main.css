@@ -245,8 +245,8 @@ body {
   grid-column: 1/-1;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: 1fr repeat(7, minmax(-webkit-min-content, 16rem)) 1fr;
-  grid-template-columns: 1fr repeat(7, minmax(min-content, 16rem)) 1fr;
+  grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(-webkit-min-content, 16rem)) minmax(10rem, 1fr);
+  grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
   grid-template-rows: repeat(3, -webkit-min-content);
   grid-template-rows: repeat(3, min-content);
   gap: 2rem;
@@ -543,6 +543,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  /* Selects the nth element of social-icons-item siblings */
 }
 .footer .social-icons .social-icons-item:nth-child(1) .social-icons-link {
   color: #3b5998;

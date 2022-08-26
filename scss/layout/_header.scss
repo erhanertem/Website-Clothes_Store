@@ -5,7 +5,9 @@
 
 	//create a grid of 9 columns by 3 rows
 	display: grid;
-	grid-template-columns: 1fr repeat(7, minmax(min-content, 16rem)) 1fr;
+	grid-template-columns:
+		minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem))
+		minmax(10rem, 1fr);
 	grid-template-rows: repeat(3, min-content);
 	gap: 2rem;
 

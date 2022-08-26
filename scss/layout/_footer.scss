@@ -75,8 +75,9 @@
 		$socialMediaIconColors: 1 #3b5998, 2 #b31217, 3 #dc4e41, 4 #55acee,
 			5 #517fa4, 6 #0077b5;
 
+		/* Selects the nth element of social-icons-item siblings */
 		@each $color in $socialMediaIconColors {
-			&-item:nth-child(#{nth($color, 1)}) .&-link {
+			.social-icons-item:nth-child(#{nth($color, 1)}) .social-icons-link {
 				color: nth($color, 2);
 				border: 0.1rem solid nth($color, 2);
 			}
