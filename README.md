@@ -10,8 +10,8 @@
 
 ### Main Takeaways:
 
-- Responsive CSS Grid Layout
-- Responsive CSS Flex Layout
+- CSS Grid Layout
+- CSS Flex Layout
 - SASS map entry for variable declarations / Utilize SASS map-get() function
 - SASS list entry for an infinitely looping slide&timings series / Use @each loop directive, nth() function along with #{...} SASS template literal to select sub-multi entry list elements
 
