@@ -500,4 +500,46 @@ body {
 }
 .contact-list-link:hover {
   color: #8c8c8c;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+}
+.contact-paragraph {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.inputs-group {
+  display: flex;
+}
+.inputs-group input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin: 1rem 0.5rem;
+  border: 0.1rem solid #1a1a1a;
+  border-radius: 0.3rem;
+  outline: none;
+  transition: border 0.3s;
+}
+.inputs-group input:focus:not([type=submit]) {
+  border: 0.1rem solid #9c6209;
+}
+.inputs-group-text {
+  width: 50%;
+}
+.inputs-group-email {
+  width: 60%;
+}
+.inputs-group-btn {
+  width: 40%;
+  color: #ffe;
+  background-color: #666666;
+  transition: background-color 0.3s;
+}
+.inputs-group-btn:hover {
+  background-color: #333;
 }/*# sourceMappingURL=main.css.map */
