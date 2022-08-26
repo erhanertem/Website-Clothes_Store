@@ -465,58 +465,54 @@ body {
   padding: 5rem 0;
   border-top: 0.1rem solid #333;
 }
-
-.footer-nav-heading {
+.footer .footer-nav-heading {
   font-size: 2.5rem;
   color: #333;
 }
-.footer-nav-item {
+.footer .footer-nav-item {
   list-style: none;
   margin: 1rem 0;
 }
-.footer-nav-link {
+.footer .footer-nav-link {
   font-size: 1.6rem;
   text-decoration: none;
   color: #595959;
   transition: color 0.3s;
 }
-.footer-nav-link:hover {
+.footer .footer-nav-link:hover {
   color: #8c8c8c;
 }
-
-.contact-list-heading {
+.footer .contact-list-heading {
   font-size: 2.5rem;
   color: #333;
 }
-.contact-list-item {
+.footer .contact-list-item {
   list-style: none;
   margin: 1rem 0;
 }
-.contact-list-link {
+.footer .contact-list-link {
   font-size: 1.6rem;
   text-decoration: none;
   color: #595959;
   transition: color 0.3s;
 }
-.contact-list-link:hover {
+.footer .contact-list-link:hover {
   color: #8c8c8c;
 }
-
-.contact-heading {
+.footer .contact-heading {
   font-size: 3rem;
   color: #333;
   text-align: center;
 }
-.contact-paragraph {
+.footer .contact-paragraph {
   font-size: 2.5rem;
   margin: 1rem 0;
   text-align: center;
 }
-
-.inputs-group {
+.footer .inputs-group {
   display: flex;
 }
-.inputs-group input {
+.footer .inputs-group input {
   padding: 1rem;
   font-size: 1.6rem;
   margin: 1rem 0.5rem;
@@ -525,21 +521,67 @@ body {
   outline: none;
   transition: border 0.3s;
 }
-.inputs-group input:focus:not([type=submit]) {
+.footer .inputs-group input:focus:not([type=submit]) {
   border: 0.1rem solid #9c6209;
 }
-.inputs-group-text {
+.footer .inputs-group-text {
   width: 50%;
 }
-.inputs-group-email {
+.footer .inputs-group-email {
   width: 60%;
 }
-.inputs-group-btn {
+.footer .inputs-group-btn {
   width: 40%;
   color: #ffe;
   background-color: #666666;
   transition: background-color 0.3s;
 }
-.inputs-group-btn:hover {
+.footer .inputs-group-btn:hover {
   background-color: #333;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.footer .social-icons .social-icons-item:nth-child(1) .social-icons-link {
+  color: #3b5998;
+  border: 0.1rem solid #3b5998;
+}
+.footer .social-icons .social-icons-item:nth-child(2) .social-icons-link {
+  color: #b31217;
+  border: 0.1rem solid #b31217;
+}
+.footer .social-icons .social-icons-item:nth-child(3) .social-icons-link {
+  color: #dc4e41;
+  border: 0.1rem solid #dc4e41;
+}
+.footer .social-icons .social-icons-item:nth-child(4) .social-icons-link {
+  color: #55acee;
+  border: 0.1rem solid #55acee;
+}
+.footer .social-icons .social-icons-item:nth-child(5) .social-icons-link {
+  color: #517fa4;
+  border: 0.1rem solid #517fa4;
+}
+.footer .social-icons .social-icons-item:nth-child(6) .social-icons-link {
+  color: #0077b5;
+  border: 0.1rem solid #0077b5;
+}
+.footer .social-icons-item {
+  list-style: none;
+}
+.footer .social-icons-link {
+  display: block;
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid #333;
+  border-radius: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -6,63 +6,98 @@
 
 	padding: 5rem 0;
 	border-top: 0.1rem solid color(primary);
-}
 
-.footer-nav {
-	@include footerList;
-}
-
-.contact-list {
-	@include footerList;
-}
-
-.contact {
-	&-heading {
-		font-size: size(xl);
-		color: color(primary);
-		text-align: center;
+	.footer-nav {
+		@include footerList;
 	}
 
-	&-paragraph {
-		font-size: size(lg);
-		margin: 1rem 0;
-		text-align: center;
+	.contact-list {
+		@include footerList;
 	}
-}
 
-.inputs-group {
-	display: flex;
+	.contact {
+		&-heading {
+			font-size: size(xl);
+			color: color(primary);
+			text-align: center;
+		}
 
-	input {
-		padding: 1rem;
-		font-size: size(xs);
-		margin: 1rem 0.5rem;
-		border: 0.1rem solid darken(color(primary), 10%);
-		border-radius: 0.3rem;
-		outline: none;
-
-		transition: border 0.3s;
-
-		&:focus:not([type="submit"]) {
-			border: 0.1rem solid darken(color(quaternary), 30%);
+		&-paragraph {
+			font-size: size(lg);
+			margin: 1rem 0;
+			text-align: center;
 		}
 	}
 
-	&-text {
-		width: 50%;
-	}
-	&-email {
-		width: 60%;
-	}
-	&-btn {
-		width: 40%;
-		color: color(secondary);
-		background-color: lighten(color(primary), 20%);
+	.inputs-group {
+		display: flex;
 
-		transition: background-color 0.3s;
+		input {
+			padding: 1rem;
+			font-size: size(xs);
+			margin: 1rem 0.5rem;
+			border: 0.1rem solid darken(color(primary), 10%);
+			border-radius: 0.3rem;
+			outline: none;
 
-		&:hover {
-			background-color: color(primary);
+			transition: border 0.3s;
+
+			&:focus:not([type="submit"]) {
+				border: 0.1rem solid darken(color(quaternary), 30%);
+			}
+		}
+
+		&-text {
+			width: 50%;
+		}
+		&-email {
+			width: 60%;
+		}
+		&-btn {
+			width: 40%;
+			color: color(secondary);
+			background-color: lighten(color(primary), 20%);
+
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: color(primary);
+			}
+		}
+	}
+
+	.social-icons {
+		display: flex;
+		justify-content: space-between;
+
+		padding: 1rem;
+
+		$socialMediaIconColors: 1 #3b5998, 2 #b31217, 3 #dc4e41, 4 #55acee,
+			5 #517fa4, 6 #0077b5;
+
+		@each $color in $socialMediaIconColors {
+			&-item:nth-child(#{nth($color, 1)}) .&-link {
+				color: nth($color, 2);
+				border: 0.1rem solid nth($color, 2);
+			}
+		}
+
+		&-item {
+			list-style: none;
+		}
+
+		&-link {
+			display: block; // in order to givew width and height for this inline element
+
+			text-decoration: none;
+			width: 4rem;
+			height: 4rem;
+			border: 0.1rem solid color(primary);
+			border-radius: 100%;
+
+			font-size: size(md); //gets inherited by <i> element
+
+			@include flexPosition; //to get the icons in the center of the circle
 		}
 	}
 }
