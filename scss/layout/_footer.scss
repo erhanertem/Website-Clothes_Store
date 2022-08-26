@@ -25,6 +25,10 @@
 			padding: 0 10rem;
 			order: 1;
 		}
+		@include break(sm) {
+			padding: 0 4rem;
+			order: 1;
+		}
 
 		&-heading {
 			font-size: size(xl);

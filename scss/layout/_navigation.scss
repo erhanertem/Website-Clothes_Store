@@ -13,6 +13,9 @@
 	@include break(md) {
 		grid-column: 4/10;
 	}
+	@include break(sm) {
+		grid-column: 2/10;
+	}
 }
 
 .second-nav {

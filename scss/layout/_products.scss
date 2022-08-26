@@ -72,12 +72,19 @@
 		@include break(lg) {
 			padding: 1rem;
 		}
+		@include break(sm) {
+			background-color: transparent;
+			border: none;
+		}
 
 		&-heading {
 			font-size: size(xl);
 
 			@include break(lg) {
 				font-size: size(md);
+			}
+			@include break(sm) {
+				display: none;
 			}
 		}
 		&-price {
@@ -87,6 +94,9 @@
 
 			@include break(lg) {
 				font-size: size(sm);
+			}
+			@include break(sm) {
+				display: none;
 			}
 
 			span {
@@ -108,6 +118,10 @@
 			@include break(lg) {
 				font-size: size(xs) * 0.8;
 				padding: 0.2rem 0.5rem;
+			}
+			@include break(sm) {
+				padding: 0.5rem 0.7rem;
+				width: 7rem;
 			}
 		}
 	}

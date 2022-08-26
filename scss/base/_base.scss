@@ -19,6 +19,11 @@ html {
 	@include break(md) {
 		font-size: 56.25%;
 	}
+
+	// font-size=8px => 8/16*100=50% is now 1rem
+	@include break(sm) {
+		font-size: 50%;
+	}
 }
 
 body {

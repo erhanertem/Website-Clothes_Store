@@ -75,6 +75,7 @@
 		position: absolute;
 		bottom: 6rem;
 		left: 6rem;
+		right: 6rem;
 
 		max-width: 40rem;
 		padding: 5rem;
@@ -87,7 +88,7 @@
 		}
 		@include break(md) {
 			padding: 1rem;
-			max-width: 20rem;
+			// max-width: 20rem;
 		}
 
 		h2 {
@@ -95,7 +96,7 @@
 			color: color(primary);
 
 			@include break(md) {
-				font-size: size(sm);
+				font-size: size(lg);
 			}
 		}
 
@@ -103,9 +104,9 @@
 			margin: 1rem 0;
 			font-size: size(sm);
 
-			@include break(md) {
-				font-size: size(sm) * 0.8;
-			}
+			// @include break(md) {
+			// 	font-size: size(sm) * 0.8;
+			// }
 		}
 	}
 }
