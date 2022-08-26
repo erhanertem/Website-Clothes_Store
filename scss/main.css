@@ -278,6 +278,11 @@ body {
 .first-nav-link .fa {
   margin-right: 0.5rem;
 }
+@media only screen and (max-width: 75em) {
+  .first-nav {
+    grid-column: 6/10;
+  }
+}
 
 .second-nav {
   grid-column: 3/8;
@@ -311,6 +316,11 @@ body {
   width: 100%;
   height: 80vh;
   position: relative;
+}
+@media only screen and (max-width: 75em) {
+  .slideshow {
+    height: 70vh;
+  }
 }
 .slideshow-slide {
   position: absolute;

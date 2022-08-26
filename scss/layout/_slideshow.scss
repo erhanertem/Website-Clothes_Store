@@ -5,6 +5,10 @@
 	width: 100%;
 	height: 80vh;
 
+	@include break(xl) {
+		height: 70vh;
+	}
+
 	position: relative;
 
 	&-slide {
